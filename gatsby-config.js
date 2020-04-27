@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter - Dimension V2',
-    author: 'Hunter Chang',
-    description: 'A Gatsby.js V2 Starter based on Dimension by HTML5 UP',
+    title: 'Ronja K. Thiede',
+    author: 'Joe Czarnecki',
+    description: 'Radiomoderatorin bei Star FM 87.9 Berlin',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -16,6 +16,13 @@ module.exports = {
         theme_color: '#663399',
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `downloads`,
+        path: `${__dirname}/src/downloads/`,
       },
     },
     'gatsby-plugin-sass',
